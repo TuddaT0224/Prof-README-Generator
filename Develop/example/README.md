@@ -5,21 +5,23 @@
    [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
   # Description
-  A node.js application that creates a generated README.md
+   node.js application that generates README
 
   # Table of Contents
-   *[Installation](#-Installation)
-   *[Usage](#-Usage)
-   *[Contributing](#-Contributing)
-   *[Tests](#-Tests)
-   *[Questions](#-Contact-Information)
-   *[License](#-Contributing)
+  *[Installation](#-Installation)
+  *[Usage](#-Usage)
+  *[Contributing](#-Contributing)
+  *[Tests](#-Tests)
+  *[Questions](#-Contact-Information)
+  *[License](#-Contributing)
 
+
+   
   # Installation
-   npm install inquirer is required
+   npm install
 
   # Usage
-   To help with other bootcamps
+   class purposes to generate readme for a project
 
   # License
   

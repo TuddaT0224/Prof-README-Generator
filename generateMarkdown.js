@@ -38,16 +38,18 @@ function generateMarkdown(data) {
    ${data.getLicense}
 
   # Description
-  ${data.description}
+   ${data.description}
 
   # Table of Contents
-   *[Installation](#-Installation)
-   *[Usage](#-Usage)
-   *[Contributing](#-Contributing)
-   *[Tests](#-Tests)
-   *[Questions](#-Contact-Information)
-   ${renderLicenseLink(data.getLicense)}
+  *[Installation](#-Installation)
+  *[Usage](#-Usage)
+  *[Contributing](#-Contributing)
+  *[Tests](#-Tests)
+  *[Questions](#-Contact-Information)
+  ${renderLicenseLink(data.getLicense)}
 
+
+   
   # Installation
    ${data.installation}
 
