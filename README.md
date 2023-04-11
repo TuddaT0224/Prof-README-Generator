@@ -1,11 +1,12 @@
 # Professional README Generator
+https://tuddat0224.github.io/Prof-README-Generator/
 
 ## Description
 A node.js application that uses user input from inquirer to populate a README.md file for user repository
 
 ## Applictation in the Command Line
 The picture shows the application running in the program:
-![img]   
+![img] "C:\Users\Trezz\OneDrive\Pictures\Screenshots\Screenshot 2023-04-10 204420.png"  
 
 ## User Story
 AS A developer
@@ -30,7 +31,9 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 ## Application Requirements
-Working application
+Working application 
+
+
 
 GitHub Repo Link: https://tuddat0224.github.io/Prof-README-Generator/edit/README.md 
 
