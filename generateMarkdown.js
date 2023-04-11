@@ -3,7 +3,7 @@
 // return a badge
 function renderLicenseBadge(license) {
   if (license !== 'NONE') {
-    return '![badge](https://img.shields.io/badge/license-${data.getLicense}-brightgreen)';
+    return '';
   } else {
     return '';
   }
@@ -70,3 +70,4 @@ function generateMarkdown(data) {
 }
 // Export the generateMarkdown function
 module.exports = generateMarkdown;
+

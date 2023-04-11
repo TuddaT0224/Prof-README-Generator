@@ -7,6 +7,17 @@ const inquirer = require("inquirer");
 //
 const generateMarkdown = require("./generateMarkdown");
 
+function getLicense(value) {
+    if(value === "MIT") {
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else if (value === "Apache 2.0") {
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else {
+        return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+    }
+}
+
+
 // TODO: Create an array of questions for user input
 const questions = [
     // Questions for the title
@@ -38,7 +49,7 @@ const questions = [
         type: "list",
         name: "getLicense",
         message: "Choose a license",
-        choices: ["MIT", "NONE", "Apache"],
+        choices: ["MIT", "NONE", "Apache 2.0"],
     },
     // Questions for Contributing
     {
@@ -62,16 +73,19 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) =>
-      err ? console.log(err) : console.log('Successfully created README file!')
-    );
+    fs.writeFile(fileName, generateMarkdown(data), function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
 }
 
 // TODO: Create a function to initialize app
-function init() { inquirer.prompt(questions).then((data) => {
+function init() { 
+ inquirer.prompt(questions).then((data) => {
     console.log(JSON.stringify(data, null, " "));
     data.getLicense = getLicense(data.license);
-    writeToFile("./example/README.md", data);
+    writeToFile("./Develop/example/README.md", data);
    });
 }
 
